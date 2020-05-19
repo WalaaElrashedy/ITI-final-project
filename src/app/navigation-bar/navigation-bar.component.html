@@ -1,0 +1,51 @@
+<nav class="nav bg-white">
+    <div class="container-fluid">
+        <div class="logo">
+            <a routerLink="Home">
+                <img src="../../assets/logo.png" alt="">
+            </a>
+        </div>
+        <div id="mainListDiv" class="main_list ml-auto">
+            <ul class="navlinks">
+                <li>
+                    <a routerLink="/" class="active">home</a>
+                </li>
+                <li>
+                    <a  routerLink="/AllVisits">places</a>
+                </li>
+                <li>
+                    <a routerLink="/AllHotels">hotels</a>
+                </li>
+                <li>
+                    <a routerLink="/AllRestaurants">resturants</a>
+                </li>
+                <li>
+                    <a routerLink="/companyPackage">Packages</a>
+                </li>
+                <li>
+                    <a (click)="guideMe()">guide me</a>
+                </li>
+                <li id="user__myTrip">
+                    <a routerLink="/my-trip">my trip</a>
+                </li>
+                <li id="tourguide__profile">
+                    <a routerLink="/tourguid">tour guide</a>
+                </li>
+                <li id="login-btn">
+                    <a routerLink="/login">login</a>
+                </li>
+                <li id="logout-btn">
+                    <a role="button" (click)="logOut()">logout</a>
+                </li>
+                <li id="dashboard">
+                    <a>Dashboard</a>
+                </li>
+            </ul>
+        </div>
+        <span class="navTrigger" (click)="toggleNav()">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
